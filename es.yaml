@@ -1,0 +1,294 @@
+common:
+    btn:
+        cancel: |
+            {{UN('CROSS MARK','WORD JOINER')}} Cancelar
+        back: |
+            ↩️
+    cancelled: |
+        🔹 Cancelado. ¿Que sigue?
+    noposts: |
+        🔹 No tienes publicaciones. {{UN('THINKING FACE')}}
+    notfound: |
+        La publicación fue eliminada o publicada.
+    unknown: |
+        🤔 No entiendo. Seleccione un comando del menú.
+    langname: |
+        es Español
+    
+home:
+    welcome: |
+        🔸 @printfbot v{{version}} - <b>la navaja suiza con herramientas de formateo y botones</b>.
+        Envíame una nueva publicación. Puede enviar texto, foto, audio, video, voz o sticker.
+        Selecciona el formato <b>{{user.parse_mode}}</b>. Puede seleccionar /html, /markdown o /nativo.
+mainkb:
+    post: |
+        {{UN('WRITING HAND','EMOJI MODIFIER FITZPATRICK TYPE-1-2','WORD JOINER')}} Nuevo post
+    poll: |
+        {{UN('BALLOT BOX WITH BALLOT','WORD JOINER')}} Nueva encuesta
+    clean: |
+        {{UN('WASTEBASKET','WORD JOINER')}} Borrar todo
+    preview: |
+        {{UN('EYES','WORD JOINER')}} Vista previa
+    settings: |
+        {{UN('HAMMER AND WRENCH','WORD JOINER')}} Ajustes
+    help: |
+        {{UN('BLACK QUESTION MARK ORNAMENT','WORD JOINER')}} Ayuda
+post:
+    kb:
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Agregar Reacciones
+        remove_reactions: |
+            {{UN('THUMBS UP SIGN')}} Remover Reacciones
+        keyboard: |
+            {{UN('KEYBOARD')}} Agregar Botones
+        remove_keyboard: |
+            {{UN('KEYBOARD')}} Remover Botones
+        attach: |
+            {{UN('HANDBAG')}} Adjuntar
+        remove_attach: |
+            {{UN('HANDBAG')}} Remover Adjunto
+        caption: |
+            {{UN('KEYBOARD')}} Editar Subtítulo
+        text: |
+            📝 Editar Texto
+        media: |
+            🌅 Replazar Media
+        wppreview: |
+            {{UN('EYES')}} Vista previa: {%if post.data.wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Permitir repost: {%if repost%}On{%else%}Off{%endif%}
+        delete: |
+            {{UN('WASTEBASKET')}} Eliminar
+        publish: |
+            {{UN('OUTBOX TRAY')}} Publicar
+        edit: |
+            🖌️ Editae
+        save: |
+            💾 Guardar
+        revert: |
+            ⤴️ Revertir
+    error: |
+        🔹 Hubo un error al enviar la publicación probablemente porque el formato no es válido.
+            
+        <code>{{error}}</code>
+        
+        🔹 Intenta arreglar el formato y envía tu publicación nuevamente.
+    notsupport: |
+        🔹 Bot no admite este tipo de mensaje. 😔
+    edit: |
+        ⚠️ Advertencia
+        Mientras que las publicaciones en modo de edición serán aceptadas, ¡la publicación no se actualizará!
+        Todas las reacciones se actualizarán después de que la publicación se guarde o se revierta.
+    list: |
+        🔹 Tus últimas publicaciones publicadas:
+    wait: |
+        🔸 Publicación ahora actualizando. Por favor espere unos segundos para editar.
+    edited: |
+        🔹 La publicación fue guardada.
+        El contenido y las reacciones se actualizarán recientemente.
+format:
+    html: |
+        🔹 Tu seleccionaste el estilo <b>html</b>.
+        
+        <b>bold text</b>
+        <code>&lt;b&gt;bold&lt;/b&gt; or &lt;strong&gt;bold&lt;/strong&gt;</code>
+        
+        <i>italic text</i>
+        <code>&lt;i&gt;italic&lt;/i&gt; or &lt;em&gt;italic&lt;/em&gt;</code>
+        
+        <a href="http://www.example.com/">inline URL</a>
+        <code>&lt;a href="http://www.example.com/"&gt;inline URL&lt;/a&gt;</code>
+        
+        <code>inline fixed-width</code>
+        <code>&lt;code&gt;inline fixed-width&lt;/code&gt;</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</code>
+    markdown: |
+        🔹 Tu seleccionaste el estilo <b>markdown</b>.
+        
+        <b>bold text</b>
+        <code>*bold text*</code>
+        
+        <i>italic text</i>
+        <code>_italic text_</code>
+        
+        <a href="http://www.example.com/">inline URL</a>
+        <code>[text](http://www.example.com/)</code>
+        
+        <code>inline fixed-width</code>
+        <code>`inline fixed-width code`</code>
+        
+        <pre>pre-formatted fixed-width block</pre>
+        <code>```pre-formatted fixed-width block```</code>
+    native: |
+        🔹 Tu seleccionaste el estilo <b>native</b>. Utilice este modo para formatear en clientes nativos o al reenviar mensajes desde otros lugares.
+        
+reactions:
+    set: |
+        🔹 Seleccione los últimos botones usados ​​desde abajo o envíe algunos nuevos para agregar reacciones a la publicación.
+        Para crear botones de texto use el símbolo <b>"|"</b> como separador.
+        Puede usar de <b>uno</b> a <b>seis</b> botones para reacciones en una fila y no más <b>seis</b> por fila.
+    notfound: |
+        🔹 Formato erróneo.
+        Puede usar de <b>uno</b> a <b>seis</b> botones para reacciones en una fila y no más <b>seis</b> por fila.
+    toomany: |
+        🔹 Too many buttons for reactions.
+        Puede usar de <b>uno</b> a <b>seis</b> botones para reacciones en una fila y no más <b>seis</b> por fila.
+    saved: |
+        🔹 Reaciones guardadas.
+    removed: |
+        Reacciones removidas  
+        
+caption:
+    kb:
+        delete: |
+            {{UN('WASTEBASKET','WORD JOINER')}} Delete caption
+    set: |
+        🔹 Send text for caption or delete it:
+    error: |
+        🔹 There was error while sending post probably becouse invalid formatting.
+        {%if error%}
+        <code>{{error}}</code>
+        {%endif%}
+        Try to fix formatting and send your caption again.
+    deleted: |
+        🔹 Caption was removed.
+    saved: |
+        🔹 Caption was saved.
+        
+keyboard:
+    set: |
+        🔹 Send me keyboard for add to post in following format:
+        
+        <code>Caption = http://example.com/</code>
+        To add repost-button set following:
+        <code>Repost = REPOST</code>
+        
+        You can use from <b>one</b> to <b>12</b> buttons.
+    toomany: |
+        🔹 Too many buttons.
+        You can use from <b>one</b> to <b>12</b> buttons.
+    error: |
+        🔹 There was error while sending post probably becouse invalid formatting.
+        {%if error%}    
+        <code>{{error}}</code>
+        {%endif%}
+        
+        Try to fix formatting and send your keyboard again.
+    saved: |
+        🔹 Keyboard was saved.
+    removed: |
+        Keyboard was removed.
+attach:
+    set: |
+        🔹 Send me photo or url to attach to the post:
+        <code>https://example.com/</code>
+    error: |
+        🔹 There was error while attaching. You can attach only photo or url.
+    saved: |
+        🔹 Attached!
+    removed: |
+        Attach was removed.
+media:
+    set: |
+        🔹 Send new media:
+    error: |
+        🔹 You can change media only to photo, audio, document, animation and video.
+        Please try another one.
+    saved: |
+        🔹 New media was saved.
+text:
+    set: |
+        🔹 Send new message text:
+    error: |
+        🔹 You can change text message only with text.
+        Please try another one.
+    saved: |
+        🔹 New text was saved.
+publish:
+    kb:
+        share: |
+            {{UN('PAGE WITH CURL')}} Share...
+    published: |
+        ✅ Your posts will cookied done. Now you can share it to your channel or group.
+            
+vote: 
+    processed: |
+        {%if remove%}Your vote removed.{%else%}Your vote accepted.{%endif%}
+        {%if later%} Post will be updated soon.{%endif%}
+    notfound: |
+        Unknown or deleted post. Sorry! {{UN('PENSIVE FACE')}}
+        
+delete: 
+    deleted: |
+        Post was deleted. {{UN('PENSIVE FACE')}} 
+    deletedall: |
+        🔹 All your posts was deleted. {{UN('PENSIVE FACE')}}
+        
+inline:
+    new: |
+        Write new post in bot.
+    post: |
+        {%if emojis%}
+        Send post with {{emojis|join(' / ')}}
+        {%else%}
+        Send post
+        {%endif%}
+    error: |
+        Formatting error. Go to pm to help.
+    share:
+        text: |
+            Share your text post.
+        document: |
+            Share your document.
+        animation: |
+            Share your animation.
+        video: |
+            Share your video.
+        sticker: |
+            Share your sticker.
+        voice: |
+            Share your voice.
+settings:
+    kb:
+        lang: |
+            {{UN('GLOBE WITH MERIDIANS')}} Bot language
+        format: |
+            {{UN('MEMO')}} Format: {{user.parse_mode}}
+        reactions: |
+            {{UN('THUMBS UP SIGN')}} Default reactions
+        delreactions: |
+            {{UN('THUMBS UP SIGN')}} Remove Default reactions
+        keyboard: |
+            {{UN('KEYBOARD')}} Default buttons
+        delkeyboard: |
+            {{UN('KEYBOARD')}} Remove Default buttons
+        wppreview: |
+            {{UN('EYES')}} Link previews: {%if user.default_wppreview%}On{%else%}Off{%endif%}
+        repost: |
+            ↪️ Allow repost: {%if user.default_repost%}On{%else%}Off{%endif%}
+ 
+    title: |
+        There are settings. Select what do you want to change:
+    lang:
+        select: |
+            At the moment I speak with you in English. Which language do you want me to switch to?
+            <i>If you want to spaek with bot in your language, you can translate it here:</i>
+            https://github.com/vd2org/printfbot-templates
+        selected: |
+            Okay, now I'm going to talk to you in English 👌
+            
+    reactions: |
+        🔹 Select last used buttons from below or send some new for set as default reactions.
+        For create text buttons use <b>"|"</b> symbol as separator.
+        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
+    keyboard: |
+        🔹 Send me keyboard for set as default in following format:
+        
+        <code>Caption = http://example.com/</code>
+        To add repost-button set following:
+        <code>Repost = REPOST</code>
+        You can use from <b>one</b> to <b>12</b> buttons.
+    keyboardpreview: |
+        Keyboard preview...
