@@ -1,0 +1,21 @@
+🔸@printfbot - <b>Herramienta de formateo de publicaciones</b>.
+
+Se crea para formatear fácil y rápidamente publicaciones para canales y grupos.
+
+Admite agregar botones con reacciones y enlaces.
+
+Para crear una publicación, envíe texto, foto, audio, video, voz o sticker al bot.
+
+Para publicaciones de texto, puede usar html, markdown o formato nativo.
+
+Luego puede editarlo, agregar botones con reacción, enlaces y desactivar la vista previa.
+
+Cuando haya terminado, haga clic en <b>Publicar</b> y publique en el canal, grupo o chat. Se puede enviar una publicación a múltiples canales, grupos y chats: las reacciones son comunes a todos los lugares donde se envió la publicación.
+
+El bot se puede usar en modo en línea para crear publicaciones rápidamente sin salir del chat.
+
+En la configuración, puede establecer las reacciones y enlaces predeterminados y cambiar el idioma del bot.
+
+Canal de noticias: @RocketBotsNews
+
+Para soporte técnico y desarrollo de bots, comuníquese con @RocketBotsBot
