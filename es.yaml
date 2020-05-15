@@ -91,10 +91,10 @@ format:
         🔹 Tu seleccionaste el estilo <b>html</b>.
         
         <b>bold text</b>
-        <code>&lt;b&gt;bold&lt;/b&gt; or &lt;strong&gt;bold&lt;/strong&gt;</code>
+        <code>&lt;b&gt;bold&lt;/b&gt; 0 &lt;strong&gt;bold&lt;/strong&gt;</code>
         
         <i>italic text</i>
-        <code>&lt;i&gt;italic&lt;/i&gt; or &lt;em&gt;italic&lt;/em&gt;</code>
+        <code>&lt;i&gt;italic&lt;/i&gt; 0 &lt;em&gt;italic&lt;/em&gt;</code>
         
         <a href="http://www.example.com/">inline URL</a>
         <code>&lt;a href="http://www.example.com/"&gt;inline URL&lt;/a&gt;</code>
@@ -107,11 +107,11 @@ format:
     markdown: |
         🔹 Tu seleccionaste el estilo <b>markdown</b>.
         
-        <b>bold text</b>
-        <code>*bold text*</code>
+        <b>texto en negrita</b>
+        <code>*texto en negrita*</code>
         
-        <i>italic text</i>
-        <code>_italic text_</code>
+        <i>texto en cursiva</i>
+        <code>_texto en cursiva_</code>
         
         <a href="http://www.example.com/">inline URL</a>
         <code>[text](http://www.example.com/)</code>
@@ -143,152 +143,153 @@ reactions:
 caption:
     kb:
         delete: |
-            {{UN('WASTEBASKET','WORD JOINER')}} Delete caption
+            {{UN('WASTEBASKET','WORD JOINER')}} Eliminar subtítulo
     set: |
-        🔹 Send text for caption or delete it:
+        🔹 Enviar texto para título o eliminarlo:
     error: |
-        🔹 There was error while sending post probably becouse invalid formatting.
+        🔹 Hubo un error al enviar la publicación probablemente debido a un formato no válido.
         {%if error%}
         <code>{{error}}</code>
         {%endif%}
-        Try to fix formatting and send your caption again.
+        Intenta corregir el formato y envía tu subtítulo nuevamente.
     deleted: |
-        🔹 Caption was removed.
+        🔹 Se eliminó el subtítulo.
     saved: |
-        🔹 Caption was saved.
+        🔹 El subtítulo fue guardado.
         
 keyboard:
     set: |
-        🔹 Send me keyboard for add to post in following format:
+        🔹 Enviarme teclado para agregar a la publicación en el siguiente formato:
         
-        <code>Caption = http://example.com/</code>
-        To add repost-button set following:
+        <code>Título = http://example.com/</code>
+        Para agregar el conjunto de botones de reenvío siguiente:
         <code>Repost = REPOST</code>
         
         You can use from <b>one</b> to <b>12</b> buttons.
+        Puede usar de <b>uno</b> a <b>12</b> botones.
     toomany: |
-        🔹 Too many buttons.
-        You can use from <b>one</b> to <b>12</b> buttons.
+        🔹 Demasiados botones.
+        Puede usar de <b>uno</b> a <b>12</b> botones.
     error: |
-        🔹 There was error while sending post probably becouse invalid formatting.
+        🔹 Hubo un error al enviar la publicación probablemente debido a un formato no válido.
         {%if error%}    
         <code>{{error}}</code>
         {%endif%}
         
-        Try to fix formatting and send your keyboard again.
+        Intenta arreglar el formato y vuelve a enviar tu teclado.
     saved: |
-        🔹 Keyboard was saved.
+        🔹 El teclado fue guardado.
     removed: |
-        Keyboard was removed.
+        Teclado fue eliminado.
 attach:
     set: |
-        🔹 Send me photo or url to attach to the post:
+        🔹 Enviarme foto o url para adjuntar a la publicación:
         <code>https://example.com/</code>
     error: |
-        🔹 There was error while attaching. You can attach only photo or url.
+        🔹 Se produjo un error al adjuntar. Puede adjuntar solo foto o url.
     saved: |
-        🔹 Attached!
+        🔹 ¡Adjunto!
     removed: |
-        Attach was removed.
+        Adjunto fue eliminado.
 media:
     set: |
-        🔹 Send new media:
+        🔹 Enviar nuevos medios:
     error: |
-        🔹 You can change media only to photo, audio, document, animation and video.
-        Please try another one.
+        🔹 Puede cambiar los medios solo a foto, audio, documento, animación y video.
+           Por favor intente con otro.
     saved: |
-        🔹 New media was saved.
+        🔹 Se guardaron nuevos medios.
 text:
     set: |
-        🔹 Send new message text:
+        🔹 Enviar mensaje de texto nuevo:
     error: |
-        🔹 You can change text message only with text.
-        Please try another one.
+        🔹 Puede cambiar el mensaje de texto solo con texto.
+        Por favor intente con otro.
     saved: |
-        🔹 New text was saved.
+        🔹 Nuevo texto fue guardado.
 publish:
     kb:
         share: |
-            {{UN('PAGE WITH CURL')}} Share...
+            {{UN('PAGE WITH CURL')}} Compartir...
     published: |
-        ✅ Your posts will cookied done. Now you can share it to your channel or group.
+        ✅ Tus publicaciones estarán listas. Ahora puedes compartirlo en tu canal o grupo.
             
 vote: 
     processed: |
-        {%if remove%}Your vote removed.{%else%}Your vote accepted.{%endif%}
-        {%if later%} Post will be updated soon.{%endif%}
+        {%if remove%}Tu voto fue eliminado.{%else%}Tu voto fue aceptado{%endif%}
+        {%if later%} La publicación se actualizará pronto.{%endif%}
     notfound: |
-        Unknown or deleted post. Sorry! {{UN('PENSIVE FACE')}}
+        Publicación desconocida o eliminada. ¡Lo siento! {{UN('PENSIVE FACE')}}
         
 delete: 
     deleted: |
         Post was deleted. {{UN('PENSIVE FACE')}} 
     deletedall: |
-        🔹 All your posts was deleted. {{UN('PENSIVE FACE')}}
+        🔹 Se eliminaron todas tus publicaciones. {{UN('PENSIVE FACE')}}
         
 inline:
     new: |
-        Write new post in bot.
+        Escribir nueva publicación en bot.
     post: |
         {%if emojis%}
-        Send post with {{emojis|join(' / ')}}
+        Enviar publicación con {{emojis|join(' / ')}}
         {%else%}
-        Send post
+        Enviar publicación
         {%endif%}
     error: |
-        Formatting error. Go to pm to help.
+        Error de formateo.
     share:
         text: |
-            Share your text post.
+            Error de formateo. Ve a la tarde para ayudar.
         document: |
-            Share your document.
+            Comparte tu documento.
         animation: |
-            Share your animation.
+            Comparte tu animación.
         video: |
-            Share your video.
+            Comparte tu video.
         sticker: |
-            Share your sticker.
+            Comparte tu sticker.
         voice: |
-            Share your voice.
+            Comparte tu nota de voz.
 settings:
     kb:
         lang: |
-            {{UN('GLOBE WITH MERIDIANS')}} Bot language
+            {{UN('GLOBE WITH MERIDIANS')}} Idioma del bot
         format: |
-            {{UN('MEMO')}} Format: {{user.parse_mode}}
+            {{UN('MEMO')}} Formato: {{user.parse_mode}}
         reactions: |
-            {{UN('THUMBS UP SIGN')}} Default reactions
+            {{UN('THUMBS UP SIGN')}} Reacciones por defecto
         delreactions: |
-            {{UN('THUMBS UP SIGN')}} Remove Default reactions
+            {{UN('THUMBS UP SIGN')}} Remover reacciones por defecto
         keyboard: |
-            {{UN('KEYBOARD')}} Default buttons
+            {{UN('KEYBOARD')}} Botones por defecto
         delkeyboard: |
-            {{UN('KEYBOARD')}} Remove Default buttons
+            {{UN('KEYBOARD')}} Remover botones por defecto
         wppreview: |
-            {{UN('EYES')}} Link previews: {%if user.default_wppreview%}On{%else%}Off{%endif%}
+            {{UN('EYES')}} Vista previa de enlaces: {%if user.default_wppreview%}On{%else%}Off{%endif%}
         repost: |
-            ↪️ Allow repost: {%if user.default_repost%}On{%else%}Off{%endif%}
+            ↪️ Permitir repost: {%if user.default_repost%}On{%else%}Off{%endif%}
  
     title: |
-        There are settings. Select what do you want to change:
+        Estos son los ajustes. Selecciona qué quieres cambiar:
     lang:
         select: |
-            At the moment I speak with you in English. Which language do you want me to switch to?
-            <i>If you want to spaek with bot in your language, you can translate it here:</i>
+            Por el momento hablo contigo en español. ¿A qué idioma quieres que cambie?
+            <i>Si quieres hablar con este bot en tu idioma, puedes traducirlo aquí:</i>
             https://github.com/vd2org/printfbot-templates
         selected: |
-            Okay, now I'm going to talk to you in English 👌
+            Bien, ahora voy a hablar contigo en español 👌
             
     reactions: |
-        🔹 Select last used buttons from below or send some new for set as default reactions.
-        For create text buttons use <b>"|"</b> symbol as separator.
-        You can use from <b>one</b> to <b>six</b> buttons for reactions in a row and no more <b>six</b> rows.
+        🔹 Seleccione los últimos botones utilizados a continuación o envíe algunos nuevos para establecer como reacciones predeterminadas.
+        Para crear botones de texto, use el símbolo <b>"|"</b> como separador.
+        Puede usar de <b>uno</b> a <b>seis</b> botones para reacciones en una fila y no más <b>seis</b> filas.
     keyboard: |
-        🔹 Send me keyboard for set as default in following format:
+        🔹 Enviarme teclado para establecer como predeterminado en el siguiente formato:
         
-        <code>Caption = http://example.com/</code>
-        To add repost-button set following:
+        <code>Título = http://example.com/</code>
+        Para agregar un botón de reenvío:
         <code>Repost = REPOST</code>
-        You can use from <b>one</b> to <b>12</b> buttons.
+        Puede usar los botones <b>uno</b> a <b>12</b>.
     keyboardpreview: |
-        Keyboard preview...
+        Vista previa del teclado...
